@@ -18,19 +18,11 @@ cd bono
 
 ### 2. Running the Project
 
-You can run the project using Docker or Docker Compose.
-
-#### Option 1: Using Docker
+You can run the project using Docker.
 
 ```bash
 docker build -t bono-app .
 docker run -p 3000:3000 bono-app
-```
-
-#### Option 2: Using Docker Compose
-
-```bash
-docker-compose up --build
 ```
 
 ### 3. Access the Application
