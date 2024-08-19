@@ -12,7 +12,7 @@ This is a Next.js project for "Bono" that is set up to run in a Docker container
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/nekras72/for-bono.git
 cd bono
 ```
 
