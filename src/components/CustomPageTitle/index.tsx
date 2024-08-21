@@ -1,14 +1,10 @@
 import { CustomPageTitleProps } from "@/types";
 import { Typography } from "@mui/material";
 
-const CustomPageTitle: React.FC<CustomPageTitleProps> = ({ title }) => {
+const CustomPageTitle: React.FC<CustomPageTitleProps> = ({ title, subTitle }) => {
     return (
-        <Typography sx={{
-            fontFamily: 'ArkitBold',
-            fontSize: '34px',
-            fontWeight: '600'
-        }} variant="h2">
-            {title}
+        <Typography variant={title ? "mainHeader" : "mainSubHeader"}>
+            {title ?? subTitle}
         </Typography>
     )
 };

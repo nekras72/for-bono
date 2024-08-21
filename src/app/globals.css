@@ -1,8 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @font-face {
-    font-family: 'ArkitBold';
-    src: url('../fonts/Arkit Bold.ttf') format('truetype');
+    font-family: 'Noto Serif';
+    src: url('../fonts/NotoSerif.ttf') format('truetype');
     font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sanshiro Display';
+    src: url('../fonts/SanshiroDisplayBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sanshiro Display Medium';
+    src: url('../fonts/SanshiroDisplayMedium.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans.ttf') format('truetype');
     font-style: normal;
 }
 

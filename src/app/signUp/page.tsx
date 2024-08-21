@@ -21,7 +21,7 @@ const sendData = async (data: DataSendType) => {
         body: strData
     });
     if (response.ok) {
-        console.log('ok');
+        alert('User data was sent');
     }
 }
 
@@ -37,7 +37,7 @@ const SignUpPage = () => {
         <CustomMainComponent>
             <BackNavButton />
             <CustomPageTitle title={signInPageHeader} />
-            <Typography>{signInPageSubHeader}</Typography>
+            <CustomPageTitle subTitle={signInPageSubHeader} />
             <Box sx={{
                 width: '100%',
                 maxWidth: '346px',

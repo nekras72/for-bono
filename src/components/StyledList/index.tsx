@@ -26,9 +26,7 @@ const getDottedList = () => {
                     letterSpacing: '0.32px'
                 }}>{idx + 1}</Typography>
             </Box>
-            <Typography sx={{
-                fontWeight: 500,
-            }}>{item}</Typography>
+            <Typography variant="mainContent">{item}</Typography>
         </ListItem>
     })
 };

@@ -19,8 +19,10 @@ export type CustomInputProps = {
 export type CustomMainComponentProps = {
     children: ReactNode
 }
+
 export type CustomPageTitleProps = {
-    title: string
+    title?: string
+    subTitle?: string
 }
 
 export type Cause = {
@@ -49,7 +51,8 @@ export type CausesPickProps = {
 }
 
 export type SvgRendererProps = {
-    isPicked: boolean;
+    isPicked?: boolean;
+    isInDescription?: boolean;
 }
 
 export type CausesContextType = {
@@ -71,4 +74,14 @@ export type DataSendType = {
     email: string,
     firstName: string,
     causes: number[]
+}
+
+export type UseCausesType = {
+    isFetching: boolean;
+    causes: Cause[] | null;
+    error: string;
+}
+
+export type PickedCauseInfoType = {
+    cause: Cause | null;
 }

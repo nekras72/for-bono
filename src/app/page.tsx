@@ -11,24 +11,22 @@ export default function Home() {
   return (
     <CustomMainComponent>
       <CustomPageTitle title={homePageHeader} />
-      <Typography sx={{
-        fontSize: '18px'
-      }} variant="h4">
-        {homePageSubHeader}
-      </Typography>
+      <CustomPageTitle subTitle={homePageSubHeader} />
       <StyledList />
 
       <CustomMainButton sx={{ marginTop: '30px' }} href="/causeSelection" text={homePageMainBtnText} iconPosition="end" />
-      <Typography sx={{
-        marginTop: '28px',
-        textAlign: 'center',
-        "a": {
-          textDecoration: 'underline',
-          ":hover": {
-            color: 'gray'
+      <Typography
+        variant="termsPrivacy"
+        sx={{
+          marginTop: '28px',
+          textAlign: 'center',
+          "a": {
+            textDecoration: 'underline',
+            ":hover": {
+              color: 'gray'
+            }
           }
-        }
-      }}>
+        }}>
         {agreement}
         <Link href={agreementTermsAndConditionsRef}>{agreementTermsAndConditions}</Link>
         {agreementAnd}
